@@ -15,7 +15,7 @@ class Block:
         self.data = data
 
     def hash(self):
-        h = hashlib.sha256()    # SHA256 is a Cryptographic Hash Function
+        h = hashlib.sha256()    # SHA256 is a Cryptographic Hash Function...
         h.update(
         str(self.nonce).encode('utf-8') +
         str(self.data).encode('utf-8') +
